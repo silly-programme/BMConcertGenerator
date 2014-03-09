@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Electro-Plasmic Hydrocephalic Genre-Fiction Generator 2000</title>
+	<style type="text/css">
+		body {
+			color: rgb(51,51,51);
+			background-color: #F2E9DC;
+			width: 720px;
+			font-size: 25px;
+			margin-left: auto;
+			margin-right: auto;
+			line-height: 1.5;
+			border-left: solid 1px black;
+			border-right: solid 1px black;
+			padding: 0px 20px;
+		}
+		header {
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 120%;
+			text-align: center;
+		}
+		section {
+			height: 300px;
+		}
+		.slot {
+			border: dashed 1px black;
+			background-color: #F2E9BC;
+		}
+		#btnReroll {
+			border: solid 2px black;
+			border-radius: 40px;
+			padding: 0px 20px;
+			background: white;
+			box-shadow: 1px 1px 2px 3px #CCC;
+			cursor: default;
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+		.credits {
+			float: right;
+		}
+		a {
+			color: rgb(51,51,51);
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<header>The Electro-Plasmic Hydrocephalic Genre-Fiction Generator 2000</header>
+	<section>
+		<p>In a(n) <span id="s0" class="slot">____</span> <span id="s1" class="slot">____</span>, a young <span id="s2" class="slot">____</span> stumbles across a(n) <span id="s3" class="slot">____</span> which spurs him into conflict with <span id="s4" class="slot">____</span> with the help of a <span id="s5" class="slot">____</span> and her <span id="s6" class="slot">____</span>, culminating in <span id="s7" class="slot">____</span>.</p>
+		<p>Your title is: "The <span id="s8" class="slot">____</span><span id="s9" class="slot">____</span>s."
+	</section>
+	<footer>
+		<span id="btnReroll">Reroll</span>
+		<span class="credits">From <a href="http://wondermark.com/554/">http://wondermark.com/554/</a></span>
+	</footer>
+	<script type="text/javascript">
+	function fillSlots() {
+		[
+			[
+				"neo-noir",
+				"alternate-history",
+				"ancient",
+				"post-apocalyptic",
+				"dystopian",
+				"VR-simulated",
+				"metaphorical",
+				"anachronistic",
+				"leather-clad",
+				"coal-powered",
+				"dragon-filled",
+				"shrill"
+			], [
+				"America",
+				"Japan",
+				"Soviet Russia",
+				"Victorian Britain",
+				"medieval Europe",
+				"Aztec empire",
+				"Atlantis",
+				"terraformed Mars",
+				"Antartica",
+				"one-way spaceflight",
+				"Outer Rim world",
+				"set from <i>Road Warrior</i>"
+			],[
+				"flying message courier",
+				"student of metaphysics",
+				"milquetoast office drone",
+				"schlub with mild OCD",
+				"farm boy with dreams",
+				"techno-obsessed geek",
+				"brooding loner",
+				"wisecracking mercenary",
+				"idealistic revolutionary",
+				"journeyman inventor",
+				"collector of oddities",
+				"author self-insert"
+			], [
+				"magic diadem",
+				"arcane prophecy",
+				"dusty tome",
+				"crazy old man",
+				"alien artifact",
+				"enchanted sword",
+				"otherwordly portal",
+				"dream-inducing drug",
+				"encrypted data-feed",
+				"time-traveling soldier",
+				"exiled angel",
+				"talking fish"
+			], [
+				"a megalomaniacal dictator",
+				"a government conspiracy",
+				"a profit-obsessed corporation",
+				"a sneering wizard",
+				"supernatural monsters",
+				"computer viruses made real",
+				"murderous robots",
+				"an army led by a sadist",
+				"forces that encourage conformity",
+				"a charismatic politician on the rise",
+				"humanity's selfish nature",
+				"his own insecurity <i>vis-à-vis</i> girls"
+			], [
+				"sarcastic female techno-geek",
+				"tomboyish female mechanic",
+				"shape-shifting female assassin",
+				"leather-clad female inshades",
+				"girl who's always loved him",
+				"bookish female scholar with mousy brown hair",
+				"cherubic girl with pigtails and spunk",
+				"female who inexplicably becomes attracted to the damaged protagonist for unstated reasons"
+			], [
+				"wacky pet",
+				"welding gear",
+				"closet full of assault rifles",
+				"reference book",
+				"cleavage",
+				"facility with magic",
+				"condescending tone",
+				"discomfort in formal wear",
+				"propensity for being captured"
+			], [
+				"a fistfight atop a tower",
+				"a daring rescue preceding a giant explosion",
+				"a heroic sacrifice that no one will ever remember",
+				"a philosophical argument punctuated by violence",
+				"a false victory with the promise of future danger",
+				"the invocation of a spell at the last possible moment",
+				"eternal love professed without irony",
+				"the land restored to health",
+				"authorial preaching through the mouths of the characters",
+				"convoluted nonsense that squanders the readers' goodwill",
+				"wish-fullfillment solutions to real-world problems",
+				"a cliffhanger for the sake of prompting a series"
+			],[
+				"Chrono",
+				"Neuro",
+				"Aero",
+				"Cosmo",
+				"Reve",
+				"Necro",
+				"Cyber",
+				"Astro",
+				"Psycho",
+				"Steam",
+				"Meta",
+				"Black"
+			], [
+				"punk",
+				"mech",
+				"noiac",
+				"(o)poli",
+				"naut",
+				"phage",
+				"droid",
+				"bot",
+				"blade",
+				"tron",
+				"mancer",
+				"War"
+			]
+		].forEach(function(choices, index) {
+			var numChoices = choices.length;
+			var choice = choices[Math.floor(Math.random() * numChoices)];
+			var slot = document.getElementById('s'+index);
+			if (slot) {
+				slot.innerHTML = choice;
+			}
+		});
+	}
+	var btnReroll = document.getElementById('btnReroll');
+	if (btnReroll) {
+		btnReroll.onclick = fillSlots;
+	}
+	fillSlots();
+	</script>
+</body>
+</html>
